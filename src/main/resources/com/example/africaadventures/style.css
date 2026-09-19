@@ -1,0 +1,192 @@
+#mainSc, #diffSc, #contSc, #endSc {
+    -fx-background-image: url("images/safaribg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+#gameSc {
+    -fx-background-image: url("images/ground_darker.png");
+    -fx-background-position: center center;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .viewport {
+    -fx-background-image: url("images/ground_darker.png");
+    -fx-background-repeat: repeat;
+}
+
+.button {
+    -fx-background-color: rgba(56, 40, 22, 0.8);
+    -fx-text-fill: #f4e3c1;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16px;
+    -fx-padding: 10 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4, 0, 2, 2);
+    -fx-border-color: #aa8456;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10;
+}
+
+.button:hover {
+    -fx-background-color: rgba(82, 61, 34, 0.9);
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-text-fill: #fffbe9;
+}
+
+.button:pressed {
+    -fx-background-color: rgba(37, 26, 15, 0.85);
+    -fx-text-fill: #e4cfa3;
+}
+
+.label.title {
+    -fx-font-size: 36px;
+    -fx-text-fill: #fceabb;
+    -fx-font-family: "Georgia", serif;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 6, 0.3, 1, 2);
+}
+
+.label.info {
+    -fx-font-size: 14px;
+    -fx-text-fill: #f4e3c1;
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-padding: 5 10;
+    -fx-background-radius: 5;
+}
+
+.stat-box {
+    -fx-background-color: rgba(33, 24, 14, 0.6);
+    -fx-background-radius: 10;
+    -fx-padding: 10 15;
+    -fx-spacing: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0.3, 2, 2);
+    -fx-alignment: center;
+}
+
+.stat-label {
+    -fx-text-fill: #f4e3c1;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.diff-section {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fceabb;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 6, 0.3, 1, 2);
+    -fx-font-family: "Georgia", serif;
+}
+
+/* GLOBAL ROOT SETTINGS */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #e8dcc7;
+}
+
+/* === Top HUD Labels === */
+.label-hud {
+    -fx-text-fill: #f4e3c1;
+    -fx-font-size: 14px;
+    -fx-padding: 3 8;
+    -fx-background-color: rgba(40, 28, 18, 0.6);
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4, 0.3, 1, 1);
+}
+
+/* === Side Menu Buttons (Plants / Animals / Utilities) === */
+.button-menu {
+    -fx-background-color: linear-gradient(to bottom, #5e4529, #3f2f1e);
+    -fx-text-fill: #f4e3c1;
+    -fx-background-radius: 10;
+    -fx-border-color: #a8834b;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10;
+    -fx-font-size: 14px;
+    -fx-padding: 8 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.3, 2, 2);
+}
+
+.button-menu:hover {
+    -fx-background-color: linear-gradient(to bottom, #6d4f2f, #4e3b25);
+    -fx-cursor: hand;
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+}
+
+/* === Shop Panel === */
+.shop-box {
+    -fx-background-color: rgba(48, 36, 24, 0.85);
+    -fx-background-radius: 10;
+    -fx-padding: 12 16;
+    -fx-spacing: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 2, 2);
+}
+
+/* === Shop Items (VBox inside) === */
+.shop-item-label {
+    -fx-text-fill: #f4e3c1;
+    -fx-font-size: 13px;
+    -fx-padding: 2 0 6 0;
+}
+
+/* === Price text next to buttons === */
+.label-price {
+    -fx-text-fill: #cbb79e;
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 8 5;
+}
+
+.info-box, #infoLabel {
+    -fx-background-color: rgba(255, 245, 225, 0.85); /* warm beige with slight opacity */
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-spacing: 4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0.2, 2, 2);
+}
+
+#infoLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-alignment: center;
+}
+
+.info-box .label {
+    -fx-text-fill: #3b2e1e; /* rich dark brown for contrast */
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.choice-box {
+    -fx-background-color: rgba(56, 40, 22, 0.8);  /* warm brown */
+    -fx-background-radius: 8;
+    -fx-border-color: #a8834b;
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5px;
+    -fx-padding: 5 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4, 0.3, 1, 1);
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #f4e3c1;
+}
+
+/* Selected text inside the choice box */
+.choice-box .label {
+    -fx-text-fill: #f4e3c1; /* soft golden text */
+}
+
+/* Optional: style the popup items (more advanced) */
+.choice-box .menu-item {
+    -fx-background-color: rgba(56, 40, 22, 0.9);
+    -fx-text-fill: #f4e3c1;
+    -fx-font-size: 13px;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #6e4b28;
+}

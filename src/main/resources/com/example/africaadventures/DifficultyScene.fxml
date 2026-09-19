@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="diffSc" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.africaadventures.MainController">
+   <children>
+      <Label text="Africa Adventures" styleClass="title">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Separator maxWidth="400.0" prefWidth="200.0">
+      </Separator>
+      <HBox alignment="CENTER" prefHeight="152.0" prefWidth="400.0">
+         <children>
+            <Button minHeight="60.0" mnemonicParsing="false" onAction="#prevDifficulty" prefHeight="60.0" text="&lt;-">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin></Button>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Label text="Difficulty" styleClass="diff-section"/>
+                  <Label fx:id="difficultyLabel" text="EASY" styleClass="diff-section"/>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" styleClass="stat-box">
+                     <children>
+                        <Label fx:id="goalMonth" text="Months: 3" styleClass="stat-label"/>
+                        <Label fx:id="goalVisitor" text="Visitors: 20" styleClass="stat-label"/>
+                        <Label fx:id="goalMoney" text="Money: 1000" styleClass="stat-label"/>
+                        <Label fx:id="goalCarnivore" text="Carnivores: 5" styleClass="stat-label"/>
+                        <Label fx:id="goalHerbivore" text="Herbivores: 10" styleClass="stat-label"/>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button minHeight="60.0" mnemonicParsing="false" onAction="#nextDifficulty" prefHeight="60.0" text="-&gt;">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin></Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#toHome" text="HOME">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#toGame" text="START">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
